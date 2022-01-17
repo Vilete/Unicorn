@@ -1,0 +1,42 @@
+/*
+ * Importation des polices de caractères
+ * https://fonts.google.com/
+ */
+ @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=PT+Sans:wght@400;700&display=swap');
+
+ /* Configuration des variables */
+ :root {
+     --black: #181818;
+     --white: #ffffff;
+     --gray: #eeeeee;
+     --gray-light: #fbfbfb;
+     --font-body: 'PT Sans', sans-serif;
+     --font-title: 'Libre Baskerville', serif;
+ }
+ 
+/* Retrait des marges sur tous les éléments */
+ * {
+     margin: 0;
+ }
+
+ /* Configuration du document */
+ body {
+     font-family: var(--font-body);
+     font-size: 16px;
+     background-color: var(--gray-light);
+ }
+
+ /*
+ * Retrait des marges sur tous les balises "heading"
+ * et configuration de la police de caractère par défaut pour les balises "heading"
+ */
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-title);
+}
+
+/* Élément permettant de centrer d'autres éléments sur la page */
+.container {
+    width: 90%;
+    margin: auto;
+}
+
